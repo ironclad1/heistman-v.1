@@ -10,11 +10,13 @@ module.exports = {
         const role = message.guild.roles.cache.find(r => r.id === roletofind)
         if(!role) return message.reply("Please give a valid role id!")
         let embed = new MessageEmbed()
-        .setTitle("channel unlocked!")
-        .setDescription(`This channel has been unlocked by ${message.author.tag}`)
+        .setColor(0xFF0000)
+        .setTitle("Requirement Unlock")
+        .setDescription(`<a:music:854707078004998195> Tap to join heist <a:music:854707078004998195>`)
         .setTimestamp()
         channel.updateOverwrite(role, {
-            SEND_MESSAGES: true
+            SEND_MESSAGES: false,
+            VIEW_CHANNEL: true
         })
         await channel.send(embed)
     }
