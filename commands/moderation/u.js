@@ -18,7 +18,7 @@ module.exports = {
             SEND_MESSAGES: false,
             VIEW_CHANNEL: true
         })
-        channel.updateOverwrites.create(channel.guild.roles.everyone, {
+        channel.updateOverwrites(channel.guild.roles.everyone, {
              VIEW_CHANNEL: false
         });
         await channel.send(embed)
