@@ -10,7 +10,7 @@ module.exports = {
         const role = message.guild.roles.cache.find(r => r.id === roletofind)
         if(!role) return message.reply("Please give a valid role id!")
         let embed = new MessageEmbed()
-        .setColor(0xFF0000)
+        .setColor(0x00FF00)
         .setTitle("Requirement Unlock")
         .setDescription(`<a:music:854707078004998195> Tap to join heist <a:music:854707078004998195>`)
         .setTimestamp()
