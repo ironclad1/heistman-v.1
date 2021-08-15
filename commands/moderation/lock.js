@@ -11,7 +11,7 @@ module.exports = {
         if(!role) return message.reply("Please give a valid role id!")
         let embed = new MessageEmbed()
         .setColor(0xFF0000)
-        .setTitle("channel viewlocked!")
+        .setTitle("Channel Viewlocked!")
         .setDescription(`<a:yes:873634857866121266> Done`)
         .setTimestamp()
         channel.updateOverwrite(role, {
