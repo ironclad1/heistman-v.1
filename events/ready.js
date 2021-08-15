@@ -1,41 +1,20 @@
-const MongoClient = require("mongodb").MongoClient;
-const MongoDBProvider = require("commando-provider-mongo").MongoDBProvider;
-const mongoose = require("mongoose");
-const mongoPath = process.env.MONGO;
+module.exports = async (client) => {
+  
+  const activities = [
+    { name: 'c!help', type: 'LISTENING' }, 
+    { name: '@Lemon EC', type: 'LISTENING' }
+  ];
 
-module.exports = {
-  name: "ready",
-  async execute(client) {
-    // Saving configurations to MongoDB
-    client.setProvider(
-      MongoClient.connect(process.env.MONGO)
-        .then((clientSettings) => {
-          return new MongoDBProvider(clientSettings, "FrocklesDatabases");
-          // Please rename "FrocklesDatabases" to your collection's name
-        })
-        .catch((err) => {
-          console.error(err);
-        })
-    );
+  // Update presence
+  client.user.setPresence({ status: 'online', activity: activities[0] });
 
-    // Connecting to MongoDB
-    const connectToMongoDB = async () => {
-      await mongoose
-        .connect(mongoPath, {
-          useNewUrlParser: true,
-          useUnifiedTopology: true,
-          useFindAndModify: false,
-        })
-        .then(() => {
-          console.log("Successfully Connected to MongoDB Atlas.");
-        });
-    };
-    connectToMongoDB();
-  },
-};
+  let activity = 1;
 
-module.exports.run = async(client) => {
-    console.log(`${client.user.tag} is now online!`);
-    client.user.setActivity("under development", {type:"WATCHING"})
-    await mongo()
-}
+  // Update activity every 30 seconds
+  setInterval(() => {
+    activities[2] = { name: `${client.guilds.cache.size} servers`, type: 'WATCHING' }; // Update server count
+    activities[3] = { name: `${client.users.cache.size} users`, type: 'WATCHING' }; // Update user count
+    if (activity > 3) activity = 0;
+    client.user.setActivity(activities[activity]);
+    activity++;
+  }, 30000);
