@@ -9,6 +9,10 @@ const client = new Client({
 client.commands = new Collection();
 client.aliases = new Collection();
 
+client.on{"ready", () => {
+    client.user.setPresence({ activities: [{ name: 'with Heists' }], status: 'idle' });
+})
+
 
 ["command","event"].forEach(handler => {
     require(`./handlers/${handler}`)(client);
