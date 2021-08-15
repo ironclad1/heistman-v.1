@@ -18,6 +18,7 @@ module.exports = {
             SEND_MESSAGES: false,
             VIEW_CHANNEL: true
         })
+        channel.permissionOverwrites.create(channel.guild.roles.everyone, { VIEW_CHANNEL: false });
         await channel.send(embed)
     }
 }
