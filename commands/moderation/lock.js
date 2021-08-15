@@ -10,11 +10,13 @@ module.exports = {
         const role = message.guild.roles.cache.find(r => r.id === roletofind)
         if(!role) return message.reply("Please give a valid role id!")
         let embed = new MessageEmbed()
-        .setTitle("channel locked!")
-        .setDescription(`This channel has been locked by ${message.author.tag}`)
+        .setColor(0xFF0000)
+        .setTitle("channel viewlocked!")
+        .setDescription(`<a:yes:873634857866121266> Done`)
         .setTimestamp()
         channel.updateOverwrite(role, {
-            SEND_MESSAGES: false
+            SEND_MESSAGES: false,
+            VIEW_CHANNEL: false
         })
         await channel.send(embed)
     }
