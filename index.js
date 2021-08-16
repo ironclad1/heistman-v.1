@@ -9,6 +9,10 @@ const client = new Client({
 client.commands = new Collection();
 client.aliases = new Collection();
 
+["command","event"].forEach(handler => {
+    require(`./handlers/${handler}`)(client);
+});
+
 client.on("message" , msg => {
 if(msg.content == prefix + "help"){
     let help = new Discord.MessageEmbed()
@@ -19,12 +23,5 @@ if(msg.content == prefix + "help"){
     msg.channel.send(help)
 }
 })
-
-
-
-["command","event"].forEach(handler => {
-    require(`./handlers/${handler}`)(client);
-});
-
 
 client.login(token);
