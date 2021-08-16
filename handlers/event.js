@@ -16,7 +16,7 @@ module.exports = (client) => {
                 continue;
             }
             pull.event = pull.event || file.replace(".js","");
-            client.on(pull.event, pull.run.bind(null, client));
+            client.on(pull.event, pull.run.bind(Discord, client));
             table.addRow(file,`✔-> Loaded!`);
         } catch (err) {
             console.log("");
