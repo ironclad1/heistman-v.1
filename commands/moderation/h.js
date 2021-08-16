@@ -6,7 +6,7 @@ module.exports = {
         if(!message.member.hasPermission("MANAGE_CHANNELS")) return message.reply("You do not have enough perms to use this cmd!")
         const channel = message.mentions.channels.first()
         if(!channel) return message.reply("Please mention a valid channel!")
-        const roletofind = args.slice((2,5)).join(" ")
+        const roletofind = args.slice((2)).join(" ")
         const role = message.guild.roles.cache.find(r => r.id === roletofind)
         if(!role) return message.reply("Please give a valid role id!")
         let embed = new MessageEmbed()
