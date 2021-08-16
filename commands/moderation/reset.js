@@ -16,7 +16,7 @@ module.exports = {
         channel.lockPermissions()
         await channel.send(embed)
     }
-  }
-}
+ }
+
 
 
