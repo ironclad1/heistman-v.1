@@ -13,8 +13,6 @@ module.exports = {
         .setDescription(`<a:RedVerified:789502869019557918> Everyone one can view`)
         .setTimestamp()
         channel.lockPermissions()
-	.then(() => console.log('Successfully synchronized permissions with parent channel'))
-	.catch(console.error)
         await channel.send(embed)
     }
 }
