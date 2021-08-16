@@ -9,6 +9,7 @@ module.exports = {
         const roletofind = args.slice(1).join(" ")
         const role = message.guild.roles.cache.find(r => r.id === roletofind)
         if(!role) return message.reply("Please give a valid role id!")
+        if (!message.member.roles.cache.has('role id')) return
         let embed = new MessageEmbed()
         .setColor(0x00FF00)
         .setTitle("Requirement Unlock")
