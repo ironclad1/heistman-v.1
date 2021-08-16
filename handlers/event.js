@@ -1,24 +1,27 @@
-const { readdirSync } = require("fs");
+const { readdirSync } = require('fs')
+const ascii = require('ascii-table')
+
+let table = new ascii("Events")
+table.setHeading("Event","Load Status")
 
 module.exports = (client) => {
-
-    const commands = readdirSync(__dirname.replace("\handlers", "\events")).filter(file => file.endsWith(".js"));
-
-    for (let file of commands) {
-
+    const events = readdirSync(`./events/`).filter(file => 
+        file.endsWith('.js')
+    )
+    for (let file of events) {
         try {
-            let pull = require(`${__dirname.replace("\handlers", "\events")}/${file}`);
-
+            let pull = require(`../events/${file}`);
             if (pull.event && typeof pull.event !== "string") {
+                table.addRow(file, `❌-> Property event should be a string!`)
                 continue;
             }
-
-            pull.event = pull.event || file.replace(".js", "")
-
-            client.on(pull.event, pull.run.bind(null, client))
-
+            pull.event = pull.event || file.replace(".js","");
+            client.on(pull.event, pull.run.bind(null, client));
+            table.addRow(file,`✔-> Loaded!`);
         } catch (err) {
-            console.log('❌ Error excecuting event(s)! This is most likely a problem with your code.')
+            console.log("");
+            console.log(err);
+            table.addRow(file,`❌-> This has an error!`)
         }
     }
-}
+    console.log(table.toString());
