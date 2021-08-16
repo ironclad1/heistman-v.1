@@ -4,7 +4,7 @@ const Discord = require('discord.js')
 
 module.exports.run = async(client) => {
     console.log(`${client.user.tag} is now online!`);
-    client.user.setActivity("Heists || .help", {type:"WATCHING"})
+    client.user.setActivity("Heists || .help", {type:"PLAYING"})
     
     let prefix = '.';
     client.on("message" , msg => {
