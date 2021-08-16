@@ -1,5 +1,6 @@
 const { Client, Collection } = require("discord.js");
 const { token } = require("./token.json")
+const { prefix } = require("./token.json")
 
 const client = new Client({
     disableEveryone: true
