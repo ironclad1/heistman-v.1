@@ -9,7 +9,7 @@ module.exports.run = async(client) => {
     let prefix = '.';
     client.on("message" , msg => {
     if(msg.content == prefix + "servers") {
-        client.guilds.cache.forEach((guild.id) => {
+        client.guilds.cache.forEach((guild) => {
             console.log(guild.id)
         })
        }
