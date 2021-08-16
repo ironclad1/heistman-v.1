@@ -1,6 +1,6 @@
 const { MessageEmbed } = require("discord.js")
 module.exports = {
-    name: "reset",
+    name: "r",
     description: "reset the channel perms",
     run: async(client, message, args) => {
         if(!message.member.hasPermission("MANAGE_CHANNELS")) return message.reply("You do not have enough perms to use this cmd!")
