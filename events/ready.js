@@ -6,7 +6,7 @@ module.exports.run = async(client) => {
     client.user.setActivity("Heists || .help", {type:"WATCHING"})
     
     client.on("message" , msg => {
-    if(msg.content == prefix + "servers") => {
+    if(msg.content == prefix + "servers") {
         client.guilds.cache.forEach((guild) => {
             console.log(guild)
         })    
