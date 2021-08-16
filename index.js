@@ -9,6 +9,7 @@ const client = new Client({
 client.commands = new Collection();
 client.aliases = new Collection();
 
+client.on("message" , msg => {
 if(msg.content == prefix + "help"){
     let help = new Discord.MessageEmbed()
     .setColor("RANDOM")
