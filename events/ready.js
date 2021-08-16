@@ -1,6 +1,5 @@
-const { prefix, devs } = require('../token.json')
 module.exports.run = (client) => {
-    console.log('clad is op');
+    console.log('${client.user.tag} is op');
     
     client.user.setActivity("Heists"), {type:"WATCHING"})
 }
