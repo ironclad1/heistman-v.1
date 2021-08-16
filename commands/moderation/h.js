@@ -1,6 +1,6 @@
 const { MessageEmbed } = require("discord.js")
 module.exports = {
-    name: "u",
+    name: "h",
     description: "Unlocks a given channel for a particular role!",
     run: async(client, message, args) => {
         if(!message.member.hasPermission("MANAGE_CHANNELS")) return message.reply("You do not have enough perms to use this cmd!")
