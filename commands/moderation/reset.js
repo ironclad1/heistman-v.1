@@ -6,7 +6,8 @@ module.exports = {
         if(!message.member.hasPermission("MANAGE_CHANNELS")) return message.reply("You do not have enough perms to use this cmd!")
         const channel = message.mentions.channels.first()
         if (!channel.parent) {
-	return console.log('This channel is not listed under a category')
+    return console.log('This channel is not listed under a category');
+}
         let embed = new MessageEmbed()
         .setColor(0xFF0000)
         .setTitle("Reset Done😵‍💫")
