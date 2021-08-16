@@ -10,13 +10,12 @@ module.exports = {
         let embed = new MessageEmbed()
         .setColor(0xFF0000)
         .setTitle("Reset Done😵‍💫")
-        .setDescription(`<a:RedVerified:789502869019557918> Everyone one can view`)
+        .setDescription(`<a:RedVerified:789502869019557918> Everyone can view`)
         .setTimestamp()
         channel.lockPermissions()
         await channel.send(embed)
     }
+  }
 }
-
-
 
 
