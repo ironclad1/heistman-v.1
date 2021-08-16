@@ -1,6 +1,6 @@
 const mongo = require('../mongo')
 const Discord = require('discord.js')
-const { prefix } = require("./token.json")
+
 
 module.exports.run = async(client) => {
     console.log(`${client.user.tag} is now online!`);
