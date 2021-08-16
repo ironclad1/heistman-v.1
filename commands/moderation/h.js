@@ -8,6 +8,7 @@ module.exports = {
         if(!channel) return message.reply("Please mention a valid channel!")
         const roletofind = args.slice(1).join(" ")
         const role = message.guild.roles.cache.find(r => r.id === roletofind)
+        const role = message.guild.roles.cache.get(args[index])
         if(!role) return message.reply("Please give a valid role id!")
         if (!message.member.roles.cache.has('role id')) return
         let embed = new MessageEmbed()
