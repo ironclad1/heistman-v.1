@@ -30,7 +30,8 @@ client.on("message" , msg => {
 if(msg.content == prefix + "perms"){
     let perms = new MessageEmbed()
     .setColor("RANDOM")
-    .addfield(`[**__HEIST CATEGORY PERMISSIONS__** :](https://media.discordapp.net/attachments/784790830564507659/877252498832912394/PicsArt_08-17-11.38.02.jpg?width=340&height=407)`)
+    .setTitle("**__HEIST CATEGORY PERMISSIONS__** :")
+    .setURL("https://media.discordapp.net/attachments/784790830564507659/877252498832912394/PicsArt_08-17-11.38.02.jpg?width=340&height=407")
     .setThumbnail(client.user.avatarURL())
     .setDescription(`<:bullet:876693936750624768> \`Everyone\` = [Deny can't send message](https://media.discordapp.net/attachments/784790830564507659/877244295608930364/unknown.png)\n<:bullet:876693936750624768> \`My Perms\` = Give [Manage channel & Manage permissions](https://media.discordapp.net/attachments/784790830564507659/877244494507040768/unknown.png) + all perms\n<:bullet:876693936750624768> \`Dank Memer\` = All the permissions\n<:bullet:876693936750624768> \`Your server Heist starter/Heist Manager\` = Your accordingly`)
     .setFooter("Coded By IRONCLAD#0808")
