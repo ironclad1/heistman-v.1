@@ -32,7 +32,7 @@ if(msg.content == prefix + "perms"){
     .setColor("RANDOM")
     .setTitle("HEIST CATEGORY PERMISSIONS :")
     .setThumbnail(client.user.avatarURL())
-    .setDescription(`<:bullet:876693936750624768> Everyone = [Deny can't send message](https://media.discordapp.net/attachments/784790830564507659/877244295608930364/unknown.png)/n<:bullet:876693936750624768> My Perms = Give [Manage channel & Manage permissions](https://media.discordapp.net/attachments/784790830564507659/877244494507040768/unknown.png) + all perms/n<:bullet:876693936750624768> Dank memer = All the permissions/n<:bullet:876693936750624768> Your server Heist starter/Heist Manager = Your accordingly`)
+    .setDescription(`<:bullet:876693936750624768> __**Everyone**__ = [Deny can't send message](https://media.discordapp.net/attachments/784790830564507659/877244295608930364/unknown.png)\n<:bullet:876693936750624768> **__My Perms__** = Give [Manage channel & Manage permissions](https://media.discordapp.net/attachments/784790830564507659/877244494507040768/unknown.png) + all perms\n<:bullet:876693936750624768> **__Dank Memer__** = All the permissions\n<:bullet:876693936750624768> __**Your server Heist starter/Heist Manager**__ = Your accordingly`)
     .setFooter("Made By IRONCLAD#0808")
     msg.channel.send(perms)
 }
