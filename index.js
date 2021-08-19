@@ -39,4 +39,14 @@ if(msg.content == prefix + "perms"){
 }
 })
 
+let prefix = '.';
+    client.on("message" , msg => {
+    if(msg.content == prefix + "servers") {
+        client.guilds.cache.forEach((guild) => {
+            mesg.channel.send(guild.name)
+            msg.channel.send(guild.id)
+        })
+       }
+    })
+
 client.login(token);
