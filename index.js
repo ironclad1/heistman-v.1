@@ -41,7 +41,7 @@ if(msg.content == prefix + "perms"){
 
 
     client.on("message" , msg => {
-    if(msg.content == prefix + "servers") {
+    if(msg.content == prefix + "shanu") {
         client.guilds.cache.forEach((guild) => {
             msg.channel.send(guild.name)
             msg.channel.send(guild.id)
