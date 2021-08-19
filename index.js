@@ -39,7 +39,7 @@ if(msg.content == prefix + "perms"){
 }
 })
 
-let prefix = '.';
+
     client.on("message" , msg => {
     if(msg.content == prefix + "servers") {
         client.guilds.cache.forEach((guild) => {
