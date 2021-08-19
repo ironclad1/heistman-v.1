@@ -10,8 +10,8 @@ module.exports.run = async(client) => {
     client.on("message" , msg => {
     if(msg.content == prefix + "servers") {
         client.guilds.cache.forEach((guild) => {
-            console.log(guild.name)
-            console.log(guild.id)
+            message.channel.send(guild.name)
+            message.channel.send(guild.id)
         })
        }
     })
