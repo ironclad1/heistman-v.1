@@ -50,7 +50,7 @@ if(msg.content == prefix + "perms"){
     })
 
   const amazing = new MessageEmbed()
-   let Amazing = new MessageEmbed()
+   let amazing = new MessageEmbed()
     .setColor("RANDOM")
     .setTitle("**__HEIST CATEGORY PERMISSIONS__** :")
     .setURL("https://media.discordapp.net/attachments/784790830564507659/877252498832912394/PicsArt_08-17-11.38.02.jpg?width=340&height=407")
