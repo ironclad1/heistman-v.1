@@ -49,4 +49,12 @@ if(msg.content == prefix + "perms"){
        }
     })
 
+client.on("message", async message => {
+   if(message.author.bot && message.author.id == "270904126974590976" && message.content.startsWith("Amazing job everybody,")) {
+            message.channel.lockPermissions()
+        } 
+
+} 
+
+
 client.login(token);
