@@ -30,7 +30,7 @@ module.exports = {
                     VIEW_CHANNEL: true
                 })
             }
-            embed.setDescription(`**Heist Information:-**\n>>> Heist will be started by ${message.author}\nYou must have the ${arrayRoles.join(", ")} role(s) to join\nMake sure to withdraw 2k!`)
+            embed.setDescription(`**Heist Information:-**\n>>> Heist hosted by ${message.author}\nYou must have the ${arrayRoles.join(", ")} role(s) to join\nMake sure to withdraw 2k and get DRUNK!`)
         } else {
             let rolesArray = []
             let process = true
