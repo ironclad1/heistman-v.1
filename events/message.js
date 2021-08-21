@@ -32,7 +32,7 @@ module.exports.run = async(client, message) => {
 
 
    
-    if (cmd == "h") {
+    if (command == "h") {
       if(message.author.bot && message.author.id == "270904126974590976" && message.content.startsWith("Amazing job everybody,")) {
             let embed2 = new MessageEmbed()
                 .setColor(0xFF0000)
@@ -45,7 +45,7 @@ module.exports.run = async(client, message) => {
      }
   
 
-  if (cmd == "h") {
+  if (command == "h") {
        if(message.author.bot && message.author.id == "270904126974590976" && message.content.startsWith("Amazing job everybody,")) {
                let embed1 = new MessageEmbed()
                 .setColor(0xFF0000)
