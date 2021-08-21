@@ -57,7 +57,7 @@ client.on("message", async message => {
                 .setDescription(`<a:RedVerified:789502869019557918> Everyone can view`)
                 .setTimestamp()
                 message.channel.lockPermissions()
-                msg.channel.send(embed1)
+                message.channel.send(embed1)
    } 
 
 })
