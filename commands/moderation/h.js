@@ -73,6 +73,6 @@ module.exports = {
                  message.channel.lockPermissions()
                  message.channel.send(embed2)
         } 
-
-}
+    })
+  }
 }}
