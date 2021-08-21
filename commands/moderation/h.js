@@ -1,4 +1,4 @@
-const { MessageEmbed } = require("discord.js")
+const Discord = require("discord.js")
 module.exports = {
     name: "h",
     description: "Unlocks a given channel for a particular role!",
