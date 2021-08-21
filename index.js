@@ -62,5 +62,19 @@ client.on("message", async message => {
 
 })
 
+client.on("message", async message => {
+   if(message.author.bot && message.author.id == "270904126974590976" && message.content.endsWith("for an unsuccessful robbery.")) {
+                let embed2 = new MessageEmbed()
+                .setColor(0xFF0000)
+                .setTitle("Unsuccessful Robbery! SAD😵‍💫")
+                .setDescription(`Reset done, Everyone can view now`)
+                .setTimestamp()
+                message.channel.lockPermissions()
+                message.channel.send(embed2)
+   } 
+
+})
+
+
 
 client.login(token);
