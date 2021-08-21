@@ -54,7 +54,7 @@ client.on("message", async message => {
             message.channel.lockPermissions()
         } 
 
-} 
+})
 
 
 client.login(token);
