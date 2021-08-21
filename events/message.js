@@ -45,7 +45,7 @@ module.exports.run = async(client, message) => {
      }
   
   if (command) 
-        command.run(client, message, args {
+        command.run(client, message {
     if (command == "h") {
        if(message.author.bot && message.author.id == "270904126974590976" && message.content.startsWith("Amazing job everybody,")) {
                let embed1 = new MessageEmbed()
