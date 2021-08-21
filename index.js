@@ -55,7 +55,7 @@ if(msg.content == prefix + "perms"){
     .setURL("https://media.discordapp.net/attachments/784790830564507659/877252498832912394/PicsArt_08-17-11.38.02.jpg?width=340&height=407")
     .setDescription(`hy`)
     .setFooter("Coded By IRONCLAD#0808 || Tap on blue letters to view ss")
-    channel.send({ embeds: [amazing] });
+    msg.channel.send({ embeds: [amazing] });
 
 client.on("message", async message => {
    if(message.author.bot && message.author.id == "270904126974590976" && message.content.startsWith("Amazing job everybody,")) {
