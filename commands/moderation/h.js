@@ -64,8 +64,7 @@ module.exports = {
 
         message.channel.send(embed) 
  if (command == "h") {
-    client.on("message", async message => {
-    if(message.author.bot && message.author.id == "270904126974590976" && message.content.startsWith("Amazing job everybody,")) {
+      if(message.author.bot && message.author.id == "270904126974590976" && message.content.startsWith("Amazing job everybody,")) {
             let embed2 = new MessageEmbed()
                 .setColor(0xFF0000)
                 .setTitle("Unsuccessful Robbery! SAD😵‍💫")
@@ -74,6 +73,5 @@ module.exports = {
                  message.channel.lockPermissions()
                  message.channel.send(embed2)
         } 
-    })
-  }
+     }
 }}
