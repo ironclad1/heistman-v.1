@@ -54,7 +54,6 @@ if(msg.content == prefix + "perms"){
     .setColor("RANDOM")
     .setTitle("**__HEIST CATEGORY PERMISSIONS__** :")
     .setURL("https://media.discordapp.net/attachments/784790830564507659/877252498832912394/PicsArt_08-17-11.38.02.jpg?width=340&height=407")
-    .setThumbnail(client.user.avatarURL())
     .setDescription(`hy`)
     .setFooter("Coded By IRONCLAD#0808 || Tap on blue letters to view ss")
     channel.send(amazing)
