@@ -27,25 +27,24 @@ module.exports.run = async(client, message) => {
         }
     }
     
-    if (command) 
-        command.run(client, message, args);
-
-
    
-    if (cmd == "h") {
-      if(message.author.bot && message.author.id == "270904126974590976" && message.content.startsWith("Amazing job everybody,")) {
-            let embed2 = new MessageEmbed()
-                .setColor(0xFF0000)
-                .setTitle("Unsuccessful Robbery! SAD😵‍💫")
-                .setDescription(`Reset done, Everyone can view now`)
-                .setTimestamp()
-                 message.channel.lockPermissions()
-                 message.channel.send(embed2)
-        } 
-     }
+
+   //  if (cmd == "h") {
+     // if(message.author.bot && message.author.id == "270904126974590976" && message.content.startsWith("Amazing job everybody,")) {
+       //     let embed2 = new MessageEmbed()
+      //          .setColor(0xFF0000)
+      //          .setTitle("Unsuccessful Robbery! SAD😵‍💫")
+      //          .setDescription(`Reset done, Everyone can view now`)
+      //          .setTimestamp()
+      //           message.channel.lockPermissions()
+     //            message.channel.send(embed2)
+   //     } 
+  //   }
   
-  
-    if (command == "h") {
+      
+
+   if (command == "h")
+   command.run(client, message, args) {
        if(message.author.bot && message.author.id == "270904126974590976" && message.content.startsWith("Amazing job everybody,")) {
                let embed1 = new MessageEmbed()
                 .setColor(0xFF0000)
