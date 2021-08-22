@@ -43,8 +43,8 @@ module.exports.run = async(client, message) => {
   
       
 
-   if (command == "h")
-   command.run(client, message, args) {
+   if (command == "h") {
+   command.run(client, message, args)
        if(message.author.bot && message.author.id == "270904126974590976" && message.content.startsWith("Amazing job everybody,")) {
                let embed1 = new MessageEmbed()
                 .setColor(0xFF0000)
