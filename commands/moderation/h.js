@@ -5,23 +5,10 @@ module.exports = {
     run: async(client, message, args) => {
         
     
-        client.on("guildMemberAdd", GuildMember => {
-    // Logging when a GuildMember enters the Guild.
-    console.log(`${GuildMember.user.tag} joined ${GuildMember.guild.name}!`);
-
-    const role = GuildMember.guild.roles.cache.find(role => ["heist manager", "heist starter", "HEIST MANAGER", "Heist Starter"]);
-
-    // Checking if the role exists.
-    if (!role) return console.error("Couldn't find the role!");
-    // Trying to add the Role to the GuildMember and catching any error(s).
-    GuildMember.roles.add(role).catch(error => console.error(`Couldn't add the Role to the GuildMember. | ${error}`));
-});
-        
-                
       
         let i;
             let abc = ["Heist Manager", "HEIST STARTER", "heist manager", "heist starter", "HEIST MANAGER", "Heist Starter"]
-                for(i=0;i<abc.length;i++){
+                for(i=0;i<abc;i++){
                 if(role.name.includes(abc[i])){
           
                 if (!message.member.roles.cache.some(r=>i)) return message.reply("You do not have `HEIST STARTER` or `HEIST MANGER` role")
