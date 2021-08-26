@@ -7,9 +7,8 @@ module.exports = {
         
       
         let i;
-            let abc = ["Heist Manager", "HEIST STARTER"]
-            abc.toLowerCase();
-            for(i=0;i<abc;i++){
+            let abc = ["Heist Manager", "HEIST STARTER", "heist manager", "heist starter", "HEIST MANAGER", "Heist Starter"]
+                for(i=0;i<abc;i++){
                 if(role.name.includes(abc[i])){
            }
             }
