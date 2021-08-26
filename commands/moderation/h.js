@@ -10,7 +10,7 @@ module.exports = {
             let abc = ["Heist Manager", "HEIST STARTER"]
             for(i=0;i<abc.length;i++){
             if(role.name.includes(abc[i])){
-             if (!message.member.roles.cache.some(r=>["abc"].includes(abc[i])) ) return message.reply("You do not have `HEIST STARTER` or `HEIST MANGER` role")
+             if (!message.member.roles.cache.some(r=>["i"].includes(abc[i])) ) return message.reply("You do not have `HEIST STARTER` or `HEIST MANGER` role")
 }        
         }   
         // const channel = message.mentions.channels.first()
