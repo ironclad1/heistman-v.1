@@ -4,7 +4,7 @@ module.exports = {
     description: "Unlocks a given channel for a particular role!",
     run: async(client, message, args) => {
         
-const Role = GuildMember.guild.roles.cache.find(role => ["heist manager", "heist starter", "HEIST MANAGER", "Heist Starter"]);        
+    const role = member.guild.roles.cache.find(role => ["heist manager", "heist starter", "HEIST MANAGER", "Heist Starter"]);        
       
         let i;
             let abc = ["Heist Manager", "HEIST STARTER", "heist manager", "heist starter", "HEIST MANAGER", "Heist Starter"]
