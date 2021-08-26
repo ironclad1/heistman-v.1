@@ -6,8 +6,15 @@ module.exports = {
         
         
       
+        let i;
+            let yourArray = ["Heist Manager", "HEIST STARTER"]
+            for(i=0;i<yourArray;i++){
+            if(role.name.includes(yourArray[i]){
+             if (!message.member.roles.cache.some(r=>["i"].toLowerCase().includes(r.name)) ) return message.reply("You do not have `HEIST STARTER` or `HEIST MANGER` role")
+         
+}
+}
 
-        if (!message.member.roles.cache.some(r=>["Heist Manager", "Heist Starter"].includes(r.name)) ) return message.reply("You do not have `HEIST STARTER` or `HEIST MANGER` role")
         
         // const channel = message.mentions.channels.first()
         // if (!channel) {
