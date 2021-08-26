@@ -12,7 +12,7 @@ module.exports = {
                
           
               if (!message.member.roles.cache.some(r=>[i].includes(role.name.includes(abc[i]))) ) return message.reply("You do not have `HEIST STARTER` or `HEIST MANGER` role")
-        } }  
+        }   
         // const channel = message.mentions.channels.first()
         // if (!channel) {
         //     const invalidEmbed = new Discord.MessageEmbed()
@@ -72,5 +72,5 @@ module.exports = {
 
         message.channel.send(embed)
      
-    
+    }
 }}
