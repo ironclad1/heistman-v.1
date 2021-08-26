@@ -1,9 +1,9 @@
-const mongoose = require('mongoose')
+//const mongoose = require('mongoose')
 
-let schema = mongoose.Schema({
-  Guild: String,
-  roleid: String,
+//let schema = mongoose.Schema({
+//  Guild: String,
+//  roleid: String,
   
-}) 
+//}) 
 
-module.exports = mongoose.model('heists', schema)
+// module.exports = mongoose.model('heists', schema)
