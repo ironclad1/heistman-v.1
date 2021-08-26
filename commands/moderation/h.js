@@ -12,8 +12,8 @@ module.exports = {
             if(role.name.includes(yourArray[i]){
              if (!message.member.roles.cache.some(r=>["i"].toLowerCase().includes(r.name)) ) return message.reply("You do not have `HEIST STARTER` or `HEIST MANGER` role")
          
-}
-}
+)}
+
 
         
         // const channel = message.mentions.channels.first()
@@ -76,5 +76,5 @@ module.exports = {
         message.channel.send(embed) 
  
 
-
+}
 }}
