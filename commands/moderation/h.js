@@ -3,8 +3,12 @@ module.exports = {
     name: "h",
     description: "Unlocks a given channel for a particular role!",
     run: async(client, message, args) => {
-        if (!message.member.permissions.has("MANAGE_CHANNELS")) return message.reply("You do not have enough perms to use this cmd!")
+        
+        
+      
 
+        if (!message.member.roles.cache.some(r=>["Heist Manager", "Heist Starter].includes(r.name)) ) return message.reply("You do not have enough perms to use this cmd!")
+        
         // const channel = message.mentions.channels.first()
         // if (!channel) {
         //     const invalidEmbed = new Discord.MessageEmbed()
