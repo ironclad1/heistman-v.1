@@ -5,7 +5,7 @@ module.exports = {
     run: async(client, message, args) => {
         
     
-        if (!message.channel.permissionsFor(message.member) return message.reply("You do not have `HEIST STARTER` or `HEIST MANGER` role")
+        if (!message.channel.permissionsFor(message.member)) return message.reply("You do not have `HEIST STARTER` or `HEIST MANGER` role")
 
  
         // const channel = message.mentions.channels.first()
