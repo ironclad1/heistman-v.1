@@ -11,7 +11,7 @@ module.exports = {
                 for(i=0;i<abc;i++){
                 if(role.name.includes(abc[i])){
           
-                if (!message.member.roles.cache.some(r=>[i].includes(i)) ) return message.reply("You do not have `HEIST STARTER` or `HEIST MANGER` role")
+                if (!message.member.roles.cache.some(r=>i)) return message.reply("You do not have `HEIST STARTER` or `HEIST MANGER` role")
         } }  
         // const channel = message.mentions.channels.first()
         // if (!channel) {
