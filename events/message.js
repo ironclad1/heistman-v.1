@@ -14,18 +14,7 @@ module.exports.run = async(client, message) => {
     
     let command = client.commands.get(cmd);
     
-    if (!command) command = client.commands.get(client.aliases.get(cmd));
 
-    const permission = command.authorPermission
-    if(!message.member.hasPermission(permission)) {
-        return message.reply("You need to have `" + permission + "` to use this command!")
-    }
-
-    if(command.devOnly) {
-        if(!devs.includes(message.author.id)) {
-            return message.reply("Only the bot devs may use this cmd!")
-        }
-    }
     
    
 
