@@ -13,7 +13,7 @@ module.exports = {
            }
             }
 
-                if (!message.member.roles.cache.some(r=>["abc"].toLowerCase().includes(abc)) ) return message.reply("You do not have `HEIST STARTER` or `HEIST MANGER` role")
+                if (!message.member.roles.cache.some(r=>["i"].toLowerCase().includes(abc)) ) return message.reply("You do not have `HEIST STARTER` or `HEIST MANGER` role")
  
 
         
