@@ -12,7 +12,7 @@ module.exports = {
             if(role.name.includes(abc[i])){
              if (!message.member.roles.cache.some(r=>["abc"].toLowerCase().includes(abc)) ) return message.reply("You do not have `HEIST STARTER` or `HEIST MANGER` role")
 }         
-}
+
 
 
         
@@ -74,7 +74,6 @@ module.exports = {
         });
 
         message.channel.send(embed) 
- 
-
+ }
 
 }}
