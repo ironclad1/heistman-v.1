@@ -5,9 +5,14 @@ module.exports = {
     run: async(client, message, args) => {
         
     
-        if(!message.channel.overwritePermissions("MANAGE_CHANNELS")) return message.reply("You do not have `HEIST STARTER` or `HEIST MANGER` role")
-
- 
+        let i;
+            let abc = ["Heist Manager", "HEIST STARTER", "heist manager", "heist starter", "HEIST MANAGER", "Heist Starter"]
+                for(i=0;i<abc.length;i++){
+                if(role.name.includes(abc[i])){
+          
+                if (!message.member.roles.cache.some(r=>i)) return message.reply("You do not have `HEIST STARTER` or `HEIST MANGER` role")
+        } }  
+        
         // const channel = message.mentions.channels.first()
         // if (!channel) {
         //     const invalidEmbed = new Discord.MessageEmbed()
