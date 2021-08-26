@@ -2,7 +2,7 @@ const mongoose = require('mongoose')
 
 let schema = mongoose.Schema({
   Guild: String,
-  Msg: String,
+  roleid: String,
   
 }) 
 
