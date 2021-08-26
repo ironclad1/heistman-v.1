@@ -8,7 +8,7 @@ module.exports = {
       
         let i;
             let abc = ["Heist Manager", "HEIST STARTER"]
-            for(i=0;i<abc;i++){
+            for(i=0;i<abc.length;i++){
             if(role.name.includes(abc[i])){
              if (!message.member.roles.cache.some(r=>["abc"].includes(abc[i])) ) return message.reply("You do not have `HEIST STARTER` or `HEIST MANGER` role")
 }        
