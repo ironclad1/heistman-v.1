@@ -7,7 +7,7 @@ module.exports = {
         
       
 
-        if (!message.member.roles.cache.some(r=>["Heist Manager", "Heist Starter].includes(r.name)) ) return message.reply("You do not have enough perms to use this cmd!")
+        if (!message.member.roles.cache.some(r=>["Heist Manager", "Heist Starter"].includes(r.name)) ) return message.reply("You do not have enough perms to use this cmd!")
         
         // const channel = message.mentions.channels.first()
         // if (!channel) {
