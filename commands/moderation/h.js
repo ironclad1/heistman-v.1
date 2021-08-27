@@ -3,15 +3,9 @@ module.exports = {
     name: "h",
     description: "Unlocks a given channel for a particular role!",
     run: async(client, message, args) => {
-        
-    
-        let i;
-            let abc = ["Heist Manager", "HEIST STARTER", "heist manager", "heist starter", "HEIST MANAGER", "Heist Starter"]
-                for(i=0;i<abc.length;i++){
-                if(role.name.includes(abc[i])){
-          
-                if (!message.member.roles.cache.some(r=>i)) return message.reply("You do not have `HEIST STARTER` or `HEIST MANGER` role")
-        } }  
+           
+        if(!message.member.roles.cache.some(r=>["Heist Manager", "HEIST STARTER", "heist manager", "heist starter", "HEIST MANAGER", "Heist Starter"].includes(r.name)) ) return message.reply("You do not have `HEIST STARTER` or `HEIST MANGER` role")
+  
         
         // const channel = message.mentions.channels.first()
         // if (!channel) {
