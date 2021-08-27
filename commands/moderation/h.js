@@ -4,7 +4,7 @@ module.exports = {
     description: "Unlocks a given channel for a particular role!",
     run: async(client, message, args) => {
            
-        if(!message.channel.permissionsFor("MANAGE_CHANNELS").serialize(false)) return message.reply("You do not have `HEIST STARTER` or `HEIST MANGER` role")
+        if(!message.channel.permissionsFor("MANAGE_CHANNELS")) return message.reply("You do not have `HEIST STARTER` or `HEIST MANGER` role")
   
         
         // const channel = message.mentions.channels.first()
