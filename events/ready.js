@@ -7,7 +7,7 @@ module.exports.run = async(client) => {
     const arrayOfStatus = [
         `Over ${client.guilds.cache.size} servers!`,
         `Heists || .help`,
-        `keeping eye on ${client.users.cache.size} `
+        `${client.users.cache.size} members going brr`
   //  client.user.setActivity("Heists || .help", {type:"PLAYING"})
    ];
     let index = 0;
