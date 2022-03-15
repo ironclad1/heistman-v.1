@@ -6,7 +6,7 @@ module.exports = {
            
        // if(!message.channel.permissionsFor("MANAGE_CHANNELS")) return message.reply("You do not have `HEIST STARTER` or `HEIST MANGER` role")
   
-       if(!message.member.roles.cache.some(r=>["Heist Manager", "HEIST STARTER", "heist manager", "heist starter", "HEIST MANAGER", "Heist Starter", "⊹𓂃heist manager", "🧿・𝐂𝐨𝐮𝐩𝐥𝐞𝐬"].includes(r.name)) ) return message.reply("You do not have `HEIST STARTER` or `HEIST MANGER` role")
+       if(!message.member.roles.cache.some(r=>["Heist Manager", "HEIST STARTER", "heist manager", "heist starter", "HEIST MANAGER", "Heist Starter", "◦ Heist Manager", "Admin"].includes(r.name)) ) return message.reply("You do not have `HEIST STARTER` or `HEIST MANGER` role")
         
         // const channel = message.mentions.channels.first()
         // if (!channel) {
